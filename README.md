@@ -14,10 +14,10 @@ This project is an implementation of the Tic-Tac-Toe project from the [Jetbrains
 
 ## Installing, Compiling and Running
 - Installing<br/>
-You first need to clone this repository. After that you need to compile the `CinemaRoomManager.java` file. 
+You first need to clone this repository. After that you need to compile the `TicTacToe.java` file. 
 
 - Compiling<br/>
-If you have JDK installed on your computer then use the `javac CinemaRoomManager.java` command to compile the program.
+If you have JDK installed on your computer then use the `javac TicTacToe.java` command to compile the program.
 
 - Running<br/>
 After compilation you can run your program using the `java CinemaRoomManager.class` command.
@@ -25,21 +25,22 @@ After compilation you can run your program using the `java CinemaRoomManager.cla
 Note: I used JDK version 15.0.2 for developing. JDK must be installed on you computer to be able to compile and run this project. Else you can download it from the official page of [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html). 
 
 ## Manual
-As previously mentioned, this program aims to simulate the logic of a cinema room manager software. It communicates through the standard input and output.
+As previously mentioned, this program aims to simulate a Tic-Tac-Toe game. It communicates through the standard input and output.
 - **Stating phase**
-  - You need to type in the parameters(rows; seats in rows) of the cinema room when you start the program.
+  - When you start the game it inicializes a 3x3 empty grid and prints it out to the standard output.
 
-- **Menu**
-  - You will have a menu with 4 options after the starting phase. You can navigate with the `numbers` in the menu. 
-  - **Options**
-    - **Show the seats** - `1`
-      - This option prints out the seating arrangement in a form of a table to the standard output. You can see the available and the sold seats.
-    - **Buy a ticket** - `2`
-      - You can type in the position(row and seat number) of the wanted seat. If it is available then you the system will buy it automatically for you. You can't buy a seat that is already sold. The program will ask you to type in again a different seat position. The program also warns you if you want to buy a non-existent sea.
-     - **Statistics** - `3`
-       - You can get some insight into the basic statistics of the cinema room. This option prints out the following ones: Number of purchased tickets, Percentage of the sold seats, Current income, Total income(when all seats sold).
-    - **Exit** - `0`
-      - You can exit the cinema room manager.
+- **Making steps**
+  - **Asking for input**
+    - After the inicialization phase the game asks you for a pair of coordinates (x y).
+  - **User input validation**
+    - The game checks the format of the input, the validity of the input(between 1 and 3) and the emptyness of the asked cell.
+  - **Placing O or X**
+    - If the users input passed the validation an 'O' or a 'X' will be placed in the grid to the right coordinates.
+    - The player who makes the first step in the game has the 'X' and the other the 'O'.
+  - **Analyzing the games status**
+    - After each step the game analyzes its status. It searches the rows, columns, diagonals for winners. If the a winner is found or all of the cells are full the game ends.
+    - Else it asks the other player for the next input.
+  
 
 ## Usage Examples
 - Init phase: \

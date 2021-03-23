@@ -1,8 +1,5 @@
 # tic-tac-toe
-
-## Under construction!
-
-The tic-tac-toe project aims to provide a program which simulates the basic operation logic of a tic-tac-toe(3x3) game. 
+The tic-tac-toe project aims to provide a program which simulates the basic operation logic of a tic-tac-toe (3x3) game. 
 This project is an implementation of the Tic-Tac-Toe project from the [Jetbrains Academy](https://www.jetbrains.com/academy/) (I attend their Java course). This project was made for personal practice and fun.
 
 ## Table of Contents

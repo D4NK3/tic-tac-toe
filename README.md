@@ -2,7 +2,7 @@
 
 ## Under construction!
 
-The tic-tac-toe project aims to provide a program which simulates the basic operation logic of a tic-tac-toe game. 
+The tic-tac-toe project aims to provide a program which simulates the basic operation logic of a tic-tac-toe(3x3) game. 
 This project is an implementation of the Tic-Tac-Toe project from the [Jetbrains Academy](https://www.jetbrains.com/academy/) (I attend their Java course). This project was made for personal practice and fun.
 
 ## Table of Contents
@@ -20,7 +20,7 @@ You first need to clone this repository. After that you need to compile the `Tic
 If you have JDK installed on your computer then use the `javac TicTacToe.java` command to compile the program.
 
 - Running<br/>
-After compilation you can run your program using the `java CinemaRoomManager.class` command.
+After compilation you can run your program using the `java TicTacToe.class` command.
 
 Note: I used JDK version 15.0.2 for developing. JDK must be installed on you computer to be able to compile and run this project. Else you can download it from the official page of [Oracle](https://www.oracle.com/java/technologies/javase-downloads.html). 
 
@@ -44,31 +44,39 @@ As previously mentioned, this program aims to simulate a Tic-Tac-Toe game. It co
 
 ## Usage Examples
 - Init phase: \
-![Input: Dimensions(rows, seats) of the room][usage1]
+![Printing out the empty grid to the standard output][usage1]
 
-- Show the seats: \
-![Layout of the cinema room][usage2]
+- First step after init: \
+![Fist step after init][usage2]
 
-- Buy a ticket: \
-![Input: Wanted row and seat number][usage3]
+- Wrong input type: \
+![Wrong input type][usage3]
 
-- Buy a ticket (Already sold seat, Wrong input): \
-![Wrong input: Invalid seat position][usage4]
+- Wrong input range: \
+![Wrong input range][usage4]
 
-- Statistics: \
-![Purchased tickets, Percentage, Income][usage5]
+- Occupied cell: \
+![Wrong input: Already played cell][usage5]
+
+- Some simple steps: \
+![Making some steps][usage6]
+ 
+- Game ends(X wins): \
+![Game ends with win ][usage7]
   
 ## Troubleshooting
 
 - If you don't have Oracle JDK installed on your computer, then you can [download](https://www.oracle.com/java/technologies/javase-downloads.html) it.
-- If you can't run the program with the `java CoffeeMachine.class` command, then it is possibly that you need to specify the exact location of your .class file. You can do it with the -cp option, which stands for Class Path.
+- If you can't run the program with the `java TicTacToe.class` command, then it is possibly that you need to specify the exact location of your .class file. You can do it with the -cp option, which stands for Class Path.
 
 ## License
 The program and associated documentation in this repo are released under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).<br/>
 When you contribute to this repository you are doing so under the above license.
 
-[usage1]: https://github.com/D4NK3/cinema-room-manager/blob/main/img/initPhase.png
-[usage2]: https://github.com/D4NK3/cinema-room-manager/blob/main/img/showTheSeats.png
-[usage3]: https://github.com/D4NK3/cinema-room-manager/blob/main/img/buyTicket.png
-[usage4]: https://github.com/D4NK3/cinema-room-manager/blob/main/img/buyTicketInvalid.png
-[usage5]: https://github.com/D4NK3/cinema-room-manager/blob/main/img/statistics.png
+[usage1]: https://github.com/D4NK3/tic-tac-toe/blob/main/img/init.png
+[usage2]: https://github.com/D4NK3/tic-tac-toe/blob/main/img/stepAfterInit.png
+[usage3]: https://github.com/D4NK3/tic-tac-toe/blob/main/img/wrongType.png
+[usage4]: https://github.com/D4NK3/tic-tac-toe/blob/main/img/wrongRange.png
+[usage5]: https://github.com/D4NK3/tic-tac-toe/blob/main/img/occupiedCell.png
+[usage6]: https://github.com/D4NK3/tic-tac-toe/blob/main/img/someStep.png
+[usage7]: https://github.com/D4NK3/tic-tac-toe/blob/main/img/xWon.png
